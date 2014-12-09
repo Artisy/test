@@ -1,0 +1,12 @@
+%h3.titel
+  nieuwe gebruiker
+
+%registration
+  %form
+    = label :user, :email, "Email", :class => "user"   
+    = text_field :user, :email, :class => "user_input"
+    = label :user, :password, :class => "password"
+    = password_field :user, :password, :class => "password_input"
+    %input{:type => "submit", :value => "sign up", :class => "submit"}
+    
+    

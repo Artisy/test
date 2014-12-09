@@ -1,0 +1,10 @@
+%div#login
+  %h3.titel
+    Inloggen
+
+  %form
+  = label :user, :email, "Email", :class => "user"   
+  = text_field :user, :email, :class => "user_input"
+  = label :user, :password, :class => "password"
+  = password_field :user, :password, :class => "password_input"
+  %input{:type => "submit", :value => "sign in", :class => "submit"}
